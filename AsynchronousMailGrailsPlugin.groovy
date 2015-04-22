@@ -11,7 +11,7 @@ import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 
 class AsynchronousMailGrailsPlugin {
-    def version = "1.2"
+    def version = "1.2.HCD.2"
     def grailsVersion = "2.3.1 > *"
     def loadAfter = ['mail', 'quartz', 'hibernate', 'hibernate4', 'mongodb']
     def pluginExcludes = [
@@ -31,7 +31,7 @@ class AsynchronousMailGrailsPlugin {
     def title = "Asynchronous Mail Plugin"
     def description = 'The plugin realises asynchronous mail sending. ' +
             'It stores messages in the DB and sends them asynchronously by the quartz job.'
-    def documentation = "http://www.grails.org/plugin/asynchronous-mail"
+    def documentation = " http://www.grails.org/plugin/asynchronous-mail  Altered for HCD by adding sequence generator to 2 domain classes, changing the type of attachement.contents"
 
     String license = 'APACHE'
     def issueManagement = [system: 'JIRA', url: 'http://jira.grails.org/browse/GPASYNCHRONOUSMAIL']

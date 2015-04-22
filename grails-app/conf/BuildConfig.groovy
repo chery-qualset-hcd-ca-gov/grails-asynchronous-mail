@@ -24,10 +24,14 @@ grails.project.dependency.resolution = {
 
     dependencies {
         compile "org.codehaus.gpars:gpars:1.2.1"
+        build {
+            "com.oracle:ojdbc7:12.1.0.1.0"
+        }
     }
 
     plugins {
-        test(":hibernate:3.6.10.16") {
+        //test(":hibernate:3.6.10.16") {
+        test (":hibernate4:4.3.5.5") {
             export = false
         }
 
